@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pareto</title>
+    <style>
+        .banner{
+            top: 0%;
+            left: 0%;
+            position: absolute;
+        }
+        .tekst{
+            left: 22%;
+            top: 30%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(25, 47, 77);
+            position: absolute;
+        }
+        h1{
+            font-size: 90%; 
+            margin-bottom: 20%; 
+            margin-top: 60%;
+            margin-left: 18%;
+            margin-right: 20%;
+            }   
+        p{
+            font-size: 100%;
+            color: rgb(25, 47, 77);
+        }
+        a{
+            text-decoration: none;
+        }
+        #pil{
+            margin-top: 10%;
+            width: 5%;
+        }
+        @keyframes mymove {
+        from {top: 0px;}
+        to {bottom: 200px;}
+        }
+
+        #logo{
+            margin-top: 25%;
+            width: 25%;
+        }
+        .zoom {
+            transition: transform .5s;
+            margin: 0 auto;
+        }
+        .zoom:hover {
+            -ms-transform: scale(1.1); 
+            -webkit-transform: scale(1.1); 
+            transform: scale(1.1); 
+        }
+        .slide{
+            position: relative;
+            animation: mymove 5s infinite;    
+        }
+        @keyframes mymove {
+            from {top: -40px;}
+            to {top: -10px;}
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="banner">
+            <a href="https://www.pareto.no"><img src="../Pareto/images/arkitektkontor_2.jpg" alt=""></a>
+                <div class="tekst">
+                    <h1>Enkelt, fleksibelt og kostnadseffektivt.</h1>
+                        <div class="slide"> 
+                            <img id="pil" src="../Pareto/images/pil.png">
+                        </div>
+                    <a href="https://www.pareto.no/kontakt"><p class="zoom">Kontakt oss</p></a>
+                    <a href="https://www.pareto.no"> <img id="logo" src="../Pareto/images/Pareto_Bank_Prosjektbanken_2-79-79.png" class="zoom" alt=""></a>
+            </div>
+        </div>
+</body>
+</html>
+
